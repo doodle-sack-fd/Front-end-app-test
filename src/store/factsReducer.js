@@ -1,5 +1,5 @@
 const defaultState = {
-    facts: []
+    facts: [],
 }
 
 const ADD_FACTS = "ADD_FACTS"

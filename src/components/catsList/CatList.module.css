@@ -1,4 +1,4 @@
-.cat__list{
+.cat__list {
     list-style: none;
     padding: 0;
     width: 1200px;
@@ -7,4 +7,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+}
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.8em 1em calc(0.8em + 3px);
+    border-radius: 3px;
+    background: rgb(152, 150, 144);
+    box-shadow: 0 -3px rgb(169, 172, 156) inset;
+    transition: 0.2s;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.btn:hover {
+    background: rgb(139, 138, 135);
+}
+
+.btn:active {
+   background: rgb(112, 112, 110);
+    box-shadow: 0 3px rgb(163, 166, 143) inset;
 }
