@@ -1,14 +1,46 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import classes from './CatItem.module.css'
+import { isLikedAction, removeCatAction, unLikedAction } from '../../store/catReducer'
 
 const CatItem = () => {
+
+    const dispatch = useDispatch()
     const cats = useSelector(state => state.cats.cats)
     const isFetching = useSelector(state => state.cats.isFetching)
-    const facts = useSelector(state => state.facts.facts)
+    const isLiked = useSelector(state => state.cats.isLiked)
+    const like = useSelector(state => state.cats.like)
+
+    const removeCat = (id) => {
+        dispatch(removeCatAction(id))
+    }
+
+    const isLike = (cat) => {
+        dispatch(isLikedAction(cat))
+    }
+
+    const ulLike = (id) => {
+        dispatch(unLikedAction(id))
+    }
 
     return (
         <>
+            {isLiked.length > 0 ?
+                <div>
+                    {isLiked.map(like =>
+                        <li>
+                            <div>
+                                {like.url}
+                            </div>
+                            <button onClick={() => ulLike(like)}>удалить из избранного</button>
+                        </li>
+                    )}
+                </div>
+
+                : <div>Отсутствует </div>
+            
+            }
+
             {cats.map((cat, id) =>
                 <li className={classes.cat__item} key={id}>
                     <p>Фотография милого котика!</p>
@@ -19,8 +51,11 @@ const CatItem = () => {
                             <p>Порода: {cat.breeds[0].name}</p>
                         </div>
                     }
+                    <button onClick={() => isLike(cat)}>Лайкнуть</button>
+                    <button onClick={() => removeCat(cat.id)}>Удалить котика</button>
                 </li>
             )}
+
         </>
     )
 }
