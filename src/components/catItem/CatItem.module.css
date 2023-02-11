@@ -3,5 +3,14 @@
     box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
     border-radius: 20px;
     width: 380px;
-    height: 450px
+    height: 450px;
 }
+
+.btn {
+    background-color: red
+}
+
+.activeBtn {
+    background-color: blue;
+}
+
