@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Сервис по показу Бенгальских кошечек
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Сервис показывающий разных окрасов Бенгалских кошечек, в приятных локациях!
 
-## Available Scripts
+Понравившихся кошечек, можно лайкнуть!
+И они добавятся в раздел "Лайкнутые котики"
 
-In the project directory, you can run:
+## О сервисе
 
-### `npm start`
+В разделе "Главное" - общая информация о сервисе: 
+![image](https://user-images.githubusercontent.com/106888774/218451430-2b702f25-a82c-438b-838a-14849251072e.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+В разделе "К Котикам" - две кнопки, показывающие "лайкнутых котиков" и "подгрузить общий список"
+![image](https://user-images.githubusercontent.com/106888774/218451693-12f6891f-9114-412d-a8db-0855b0876d1c.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Кнопки: 
+![image](https://user-images.githubusercontent.com/106888774/218451779-35b3442c-9699-4743-8e7e-f03ee1d6be25.png)
 
-### `npm test`
+## Как пользоваться?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+При нажатие на кнопку "Показать котиков", подгружается информация с котиками
+![image](https://user-images.githubusercontent.com/106888774/218452071-d5e57755-aefa-42a3-ac91-3e0cda038fe8.png)
 
-### `npm run build`
+Дождаться подгрузки котиков: 
+![image](https://user-images.githubusercontent.com/106888774/218452228-bb40133e-1627-453e-95b2-2d8ad5b1da80.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Карточки с котиками можно лайкать, с помощью "сердечка" - кнопка лайка:
+![image](https://user-images.githubusercontent.com/106888774/218452437-58230dbb-318b-4892-97bc-6b9a43fe9656.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Так же, карточки можно удалять с помощью корзины" - кнопка удаления
+![image](https://user-images.githubusercontent.com/106888774/218452836-8426c8e7-89a5-4799-931d-0f08678175e2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Для просмотра лайкнутых карточек с котиками, нажать кнопку фильтра сверху, 
+![image](https://user-images.githubusercontent.com/106888774/218453055-e18cb2c9-e747-47c9-8186-d4610e22acf7.png)
 
-### `npm run eject`
+## Доступ к сервису
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Сервис с котиками размещён на github.pages
+https://doodle-sack-fd.github.io/Front-end-app-test/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Стэк
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+— React
+— React Router
+— State-manager: Redux
+— API: TheCatApi
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Работа с проектом
 
-## Learn More
+#npm-start
+Запуск на localhost
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#npm run build
+Сборка проекта
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#npm run deploy
+Деплой проекта на gh-pages
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
