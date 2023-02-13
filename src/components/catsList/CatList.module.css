@@ -17,7 +17,7 @@
     text-decoration: none;
     padding: 0.8em 1em calc(0.8em + 3px);
     border-radius: 3px;
-    background: rgb(152, 150, 144);
+    background: rgb(194, 192, 187);
     box-shadow: 0 -3px rgb(169, 172, 156) inset;
     transition: 0.2s;
     margin-left: 5px;
@@ -35,3 +35,4 @@
    background: rgb(112, 112, 110);
     box-shadow: 0 3px rgb(163, 166, 143) inset;
 }
+

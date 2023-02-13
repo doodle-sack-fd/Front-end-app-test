@@ -1,5 +1,7 @@
 import React from 'react'
 import classes from './Header.module.css'
+import {Link } from 'react-router-dom'
+
 
 const Header = () => {
 
@@ -7,12 +9,12 @@ const Header = () => {
         <div className={classes.header}>
             <div className={classes.header__container}>
                 <div className={classes.header__title}>
-                    <a href='' className={classes.header__left}>
+                    <Link to='/about' className={classes.header__link}>
                         Главная
-                    </a>
-                    <a href='' className={classes.right}>
+                    </Link>
+                    <Link to='/cats' className={classes.header__link}>
                         К котикам!
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
