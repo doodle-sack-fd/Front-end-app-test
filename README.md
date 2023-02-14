@@ -44,6 +44,7 @@ https://doodle-sack-fd.github.io/Front-end-app-test/
 — React Router
 — State-manager: Redux
 — API: TheCatApi
+— Tests: Jest
 
 ## Работа с проектом
 
