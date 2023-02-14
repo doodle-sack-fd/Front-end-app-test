@@ -47,14 +47,21 @@ https://doodle-sack-fd.github.io/Front-end-app-test/
 
 ## Работа с проектом
 
-#npm-start
-Запуск на localhost
+# npm-start
 
-#npm run build
-Сборка проекта
+-Запуск на localhost
 
-#npm run deploy
-Деплой проекта на gh-pages
+# npm test
+
+-Запуск тестов сервиса
+
+# npm run build
+
+-Сборка проекта
+
+# npm run deploy
+
+-Деплой проекта на gh-pages
 
 
 
