@@ -23,7 +23,7 @@ const CatsList = () => {
     }
 
     return (
-        <div>
+        <div data-testid="cats-page">
             <button className={classes.btn} onClick={isLikedCats}>Лайкнутые котики</button>
             <button className={classes.btn} onClick={() => catsAndFacts()}>Показать котиков</button>
             <ul className={classes.cat__list}>
